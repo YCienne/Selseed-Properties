@@ -1,6 +1,6 @@
-import brainwave from "./Ign.png";
+import ignition from "./Ign.png";
 import check from "./check.svg";
-import brainwaveSymbol from "./test.png";
+import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
 import gradient from "./gradient.png";
@@ -8,7 +8,7 @@ import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
-import yourlogo from "./Ign.png";
+import yourlogo from "./yourlogo.svg";
 import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
 import searchMd from "./search-md.svg";
@@ -19,11 +19,11 @@ import disc02 from "./disc-02.svg";
 import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
-import background from "./Ign.png";
+import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/ser.jpg";
-import heroBackground from "./hero/Ign.png";
+import robot from "./hero/hero1.jpg";
+import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -39,6 +39,16 @@ import slack from "./collaboration/slack.png";
 import service1 from "./services/IG.mp4";
 import service2 from "./services/Ign.mp4";
 import service3 from "./services/ser.jpg";
+import gal1 from "./services/gal1.jpg";
+import gal2 from "./services/gal2.jpg";
+import gal3 from "./services/gal3.jpg";
+import gal4 from "./services/gal4.jpg";
+import gal5 from "./services/gal5.jpg";
+import gal6 from "./services/gal6.jpg";
+import gal7 from "./services/gal7.jpg";
+import gal8 from "./services/gal8.jpg";
+import gal9 from "./services/gal10.jpg";
+import gal10 from "./services/gal11.jpg";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -46,10 +56,10 @@ import stars from "./pricing/stars.svg";
 import coins from "./roadmap/coins.png";
 import done from "./roadmap/done.svg";
 import hero from "./roadmap/hero.png";
-import roadmap1 from "./roadmap/event.jpeg";
-import roadmap2 from "./roadmap/event.jpeg";
-import roadmap3 from "./roadmap/event.jpeg";
-import roadmap4 from "./roadmap/event.jpeg";
+import roadmap1 from "./roadmap/swim1.jpg";
+import roadmap2 from "./roadmap/pub1.jpg";
+import roadmap3 from "./roadmap/event1.jpg";
+import roadmap4 from "./roadmap/pub2.jpg";
 import undone from "./roadmap/undone.svg";
 
 import notification1 from "./notification/image-1.png";
@@ -76,7 +86,7 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
-  brainwave,
+  ignition,
   check,
   check2,
   loading1,
@@ -114,6 +124,9 @@ export {
   service1,
   service2,
   service3,
+  gal1,
+  gal2,
+  gal3, gal4, gal5, gal6, gal7, gal8, gal9, gal10,
   lines,
   stars,
   coins,

@@ -18,7 +18,7 @@ const Pricing = () => {
 
             <Heading
             tag="Swimming"
-            title="Check out our swimming packages" />
+            title="Swimming Lessons Packages" />
 
             <div className="relative">
                 <PricingList />

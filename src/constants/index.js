@@ -110,7 +110,7 @@ export const roadmap = [
   {
     id: "3",
     title: "Lodging",
-    text: "We have cushy pillows",
+    
     imageUrl: roadmap4,
   },
 ];
@@ -203,16 +203,7 @@ export const pricing = [
       "Bring your kids kjkjhfg jkkfdk kjdfkj",
     ],
   },
-  {
-    id: "1",
-    title: "Family",
-    description: "You can register your family for swimming",
-    price: null,
-    features: [
-      "Family packages",
-      
-    ],
-  },
+  
   {
     id: "2",
     title: "Adult",
@@ -280,12 +271,6 @@ export const benefits = [
 
 export const socials = [
   {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
@@ -295,12 +280,6 @@ export const socials = [
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
     url: "#",
   },
   {

@@ -1,71 +1,63 @@
-import { service1, service2, service3, check } from "../assets"
-import { brainwaveServices, brainwaveServicesIcons } from "../constants"
-import { BackgroundCircles } from "./design/Header"
-import { Gradient} from "./design/Services"
-import Heading from "./Heading"
-import Section from "./Section"
+import Button from "./Button";
+import Heading from "./Heading";
+import Section from "./Section";
+import { roadmap } from "../constants";
+import { grid} from "../assets";
+import { Gradient } from "./design/Roadmap";
 
-const Services = () => {
-  return (
-    <Section id="about-us">
-        <div className="="container>
-            <Heading title="About US"
-            text="Our facilities" />
+const Services = () => (
+    <Section crosses className="overflow-hidden" id="roadmap">
+    <div className="container md:pb-10">
+        <Heading tag="Our Services" title="What we offer at Ignition" />
 
-            <div className="relative">
-                <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border 
-                border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
-                    <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-5/5 xl:w-auto">
-                        <video 
-                        className="w-full h-full object-cover md:object-left"
-                        width={800}
-                        height={730}
-                        alt="SAI" 
-                        src={service1}
-                        autoPlay
-                        loop
-                        muted
-                        />
-                    </div>
+        <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
+        {roadmap.map((item) => {
+            const status = item.status === "done" ? "Done" : "In progress";
 
-                    
-                    
+            return (
+            <div
+                className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
+                item.colorful ? "bg-conic-gradient" : "bg-n-6"
+                }`}
+                key={item.id}
+            >
+                <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
+                <div className="absolute top-0 left-0 max-w-full">
+                    <img
+                    className="w-full"
+                    src={grid}
+                    width={550}
+                    height={550}
+                    alt="Grid"
+                    />
                 </div>
-
-                
-                <div className="relative z-1 grid gap-5 lg:grid-cols-2">
-                    <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
-                    <div className="absolute inset-0">
-                        <video src={service2} className="h-full w-full object-cover" width={630} height={750} alt="Lang" autoPlay loop muted />
-                    </div>
-                    <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/10 to-n-8/90 lg:p-15">
-                        <h4 className="h4 mb-4">Ignition</h4>
-                        <p className="body-2 mb-[3rem] text-n-3">It</p>
-                        </div>
-
-                        
-                    </div>
-
-                    <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
-                        
-
-                        <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[39rem]">
-                            <img 
-                            src={service3} className="w-full h-full object-cover" width={520} height={800} alt="Scary"
-                            />
-
-                        
-                        </div>
-                    </div>
+                <div className="relative z-1">
+                    
+                <div className="mb-10 -my-10 -mx-15">
+                    <img
+                    className="w-full"
+                    src={item.imageUrl}
+                    width={628}
+                    height={426}
+                    alt={item.title}
+                    />
                 </div>
-
-                <Gradient />
-                <BackgroundCircles />
+                    <h4 className="h4 mb-4">{item.title}</h4>
+                    <p className="body-2 text-n-4">{item.text}</p>
+                </div>
             </div>
-        </div>
-    
-    </Section>
-)
-}
+            </div>
+        );
+        })}
 
-export default Services
+        <Gradient />
+    </div>
+
+    <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
+        <Button href="/booking">Book Us Now</Button>
+    </div>
+    </div>
+</Section>
+);
+
+export default Services;

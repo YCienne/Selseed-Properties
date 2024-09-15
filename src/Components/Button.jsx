@@ -19,20 +19,9 @@ const Button = ({ className, href, onClick, children, px, white }) => {
       {ButtonSvg(white)}
     </a>
   );
+  return href ? renderLink() : renderButton();
 
-  const TriggerButton = ({ onClick }) => {
-    
-        <button
-            className="px-4 py-2 bg-green-500 text-white rounded-md"
-            onClick={onClick}
-        >
-          <span className={spanClasses}>{children}</span>
-          {ButtonSvg(white)}
-        </button>
-   
 };
 
-  return href ? renderLink() : renderButton() || <TriggerButton />;
-};
 
 export default Button;
